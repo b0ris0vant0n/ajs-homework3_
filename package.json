@@ -4,16 +4,28 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/b0ris0vant0n/ajs-homework3_.git"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
   },
   "author": "Anton Borisov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/b0ris0vant0n/ajs-homework3_/issues"
   },
-  "homepage": "https://github.com/b0ris0vant0n/ajs-homework3_#readme"
+  "homepage": "https://github.com/b0ris0vant0n/ajs-homework3_#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.21.4",
+    "@babel/preset-env": "^7.21.4",
+    "babel-loader": "^9.1.2",
+    "webpack": "^5.79.0",
+    "webpack-cli": "^5.0.1"
+  }
 }
